@@ -1,0 +1,519 @@
+
+
+
+
+
+
+@font-face {
+    font-family: "Oswald";
+    
+    /* Браузер сначала попробует найти шрифт локально */
+    src: local("Roboto"),
+         /* Если не получилось, загрузит woff2 */
+         url("/fonts/Oswald-VariableFont_wght.woff2") format("woff2"),
+         /* Если браузер не поддерживает woff2, загрузит woff */
+         url("/fonts/Oswald-VariableFont_wght.woff") format("woff");
+  }
+
+
+
+
+h1{
+    color: rgba(255, 153, 0, 1);
+    font-size: 128px;
+    font-weight: 600;
+}
+
+h2{
+    color:  #F39200;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    text-align: center;
+}
+
+h3{
+    font-size: 24px;
+    color: #F39200;
+    margin: 10px;
+}
+
+h4{
+    color: white;
+}
+
+p{
+    color: white;
+}
+
+section{
+    margin-top: 100px;
+}
+
+
+
+html{
+    font-family:'Oswald' ;
+    overflow-x: hidden;
+}
+
+
+body{
+    background-color: rgba(19, 19, 19, 1);
+}
+
+.main-wrapper{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* ШАПКА */
+header{
+    height: 150px;
+    width: calc(100% - 160px);
+    padding: 0 80px 0 80px;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.50) 0%, rgba(0, 0, 0, 0.00) 100%);
+    position: absolute;
+}
+
+.header-wrap{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+/* ЛОГОТИП */
+.logo{
+    font-size: 64px;
+    font-weight: bold;
+    margin: 0;
+    color: rgba(255, 153, 0, 1);
+    margin-top: 5px;
+}
+.header-adress{
+    font-size: 36px;
+    font-weight: normal;
+    margin:0;
+    color: white;
+    text-align: right;
+}
+
+/* НОМЕРА ТЕЛЕФОНОВ В ШАПКЕ */
+
+.tel{
+    display: flex;
+    gap: 10px;
+}
+
+.tel img{
+    width: 32px;
+} 
+
+.numbers a{
+    display: flex;
+    color: white;
+    text-decoration: none;
+}
+
+
+/* ГЛАВНОЕ ИЗОБРАЖЕНИЕ */
+.hero{
+    height: 850px;
+    background-image: url(/images/texture.png);
+    background-size: cover;
+    width: 100%;
+    margin-top: 0;
+}
+
+.hero-image{ 
+    float:right;
+
+}
+
+.hero-image-mini{
+    display: none;
+}
+
+.centr-wrapper{
+    height: 850px;
+    width: inherit;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+
+}
+
+h1{
+    
+    text-shadow: 0px 4px 11.7px #000;
+    max-width: 1140px;
+    text-align: center;
+    padding-top: 100px;
+}
+
+
+/* МЕНЮ */
+nav{
+    height: 90px;
+    width: 100%;
+    background-color: rgba(255, 153, 0, 1);
+    position: relative;
+    display: flex;
+    justify-content: center;
+
+}
+.menu-wrap{
+    max-width: 960px;
+    width: 100%;
+
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-around;
+
+    position: absolute;
+    top: 30%;
+
+    /* border: 1px solid red; */
+}
+
+nav div a{
+    font-size: 24px;
+    font-weight: 300;
+    color: #000;
+    text-decoration:none;
+}
+
+/* ТЕКСТ В НАЧАЛЕ */
+.text{
+    color: white;
+    font-size: 20px;
+    max-width: 960px;
+    margin-top: 75px;
+
+}
+
+/* Изображение на фоне */
+.mask1{
+    width: 40%;
+    position: absolute;
+    z-index: -1;
+}
+
+
+
+.slider{
+    position: relative;
+    
+}
+
+.arrows{
+    position: absolute;
+    top: 50%;
+    left: 2.5%;
+    display: flex;
+    width: 95%;
+    justify-content: space-between;
+}
+
+.description-stage{
+    max-width: 960px;
+    font-size: 20px;
+}
+
+
+/* ПРИЕМУЩЕСТВА */
+.advantages{
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.advantage{
+    width: 360px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    
+}
+
+.advantage p{
+    text-align: center;
+    margin: 0;
+}
+
+
+
+
+/* КАРТОЧКИ ТОВАРОВ */
+.card-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 35px;
+    max-width: 1200px;
+    justify-content: center;
+    
+
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    padding: 15px 0px;
+    border-radius: 15px;
+    width: 460px;
+    height: fit-content;
+
+    background-color: rgba(34, 34, 34, 1);
+
+}
+.card h3{
+    text-align: center;
+}
+.card p{
+    font-size: 20px;
+    margin: 10px;
+}
+
+
+.mask2{
+    width: 40%;
+    position: absolute;
+    left: 70%;
+    z-index: -1;
+}
+
+
+/* ТЕКСТ ПОСЛЕ КАТАЛОГА */
+.notice{
+    text-align: center;
+    font-size: 32px;
+
+}
+.notice a{
+    color: #8D8D8D;
+}
+
+/* ПРИМЕРЫ РАБОТ */
+.examples-wrapper{
+    max-width: 1024px;
+}
+
+.example{
+    display: flex;
+    gap: 35px;
+    margin: 35px 10px;
+    max-width: 100%;
+}
+
+
+
+.notice-wrap{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    
+   
+
+}
+.notice2{
+    width: 885px;
+    display: block;
+    color: #FFF;
+    text-align: center;
+    font-size: 48px;
+    font-weight: 400;
+    margin: 300px 0px 170px;
+}
+
+.mask3{
+    width: 40%;
+    position: absolute;
+    left: 0px;
+    z-index: -1;
+}
+
+
+.contacts-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: center;
+}
+
+.name{
+    color: white;
+    text-decoration: underline;
+    font-size: 32px;
+    font-weight: 400px;
+    margin-left: 0;
+}
+
+address{
+    font-style: normal;
+}
+
+
+address p{
+    font-size: 24px;
+}
+
+address a{
+    color: white;
+    display: block;
+    font-size: 24px;
+}
+.messengers{
+    margin-top: 26px;
+    display: flex;
+    gap: 15px;
+}
+
+footer{
+    margin-top: 280px;
+    height: 105px;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.footer-wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1070px;
+}
+
+.footer-name p:first-child{
+    font-size: 20px;
+}
+
+.footer-name p:nth-child(2){
+    font-size: 16px;
+}
+
+.footer-numbers a{
+    color: white;
+    display: block;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.footer-numbers{
+    height: fit-content;
+    
+}
+
+.footer-description{
+    font-size: 16px;
+}
+
+.copy{
+    font-size: 14px;
+    color: #8D8D8D;
+}
+
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+    font-size: 24px;
+    color: #fff;
+    background: #000;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 5;
+}
+   
+.back-to-top:hover {
+    background: #333;
+    text-decoration: none;
+}
+
+
+
+@media screen and (max-width: 960px){
+    .tel{
+        display: none;
+    }
+    .text{
+        margin: 5% 5%;
+
+    }
+
+    h1{
+        font-size: 64px;
+    }
+
+    .slider > img{
+        width:100%
+    }
+
+    .hero-image{
+        display: none;
+
+    }
+
+    .hero-image-mini{
+        display: block;
+        float: right;
+    }
+
+    .description-stage{
+        margin: 5% 5%;
+    }
+
+
+
+}
+
+@media screen and (max-width: 450px) {
+    .slider > img{
+        width:100%
+    }
+    .logo{
+        font-size: 48px;
+    }
+    .header-adress{
+        font-size: 20px;
+    }
+
+    .hero {
+        height: 730px;
+    }
+
+    .description-stage{
+        margin: 5% 5%;
+    }
+
+    .advantage p{
+        
+    }
+
+    .card{
+        width: 380px;
+    }
+
+    .notice2{
+        margin: 5%;
+        font-size: 40px;
+    }
+
+    .example .conteiner{
+        display: none;
+    }
+
+    .examples-wrapper img{
+        width: 100%;
+    }
+
+    .footer-numbers a{
+        font-size: 12px;
+    }
+}
