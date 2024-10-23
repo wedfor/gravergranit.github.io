@@ -8,7 +8,7 @@
     font-family: "Oswald";
     
     /* Браузер сначала попробует найти шрифт локально */
-    src: local("Roboto"),
+    src: local("Oswald"),
          /* Если не получилось, загрузит woff2 */
          url("/fonts/Oswald-VariableFont_wght.woff2") format("woff2"),
          /* Если браузер не поддерживает woff2, загрузит woff */
