@@ -10,9 +10,9 @@
     /* Браузер сначала попробует найти шрифт локально */
     src: local("Oswald"),
          /* Если не получилось, загрузит woff2 */
-         url("/fonts/Oswald-VariableFont_wght.woff2") format("woff2"),
+         url("/gravergranit.github.io/fonts/Oswald-VariableFont_wght.woff2") format("woff2"),
          /* Если браузер не поддерживает woff2, загрузит woff */
-         url("/fonts/Oswald-VariableFont_wght.woff") format("woff");
+         url("/gravergranit.github.io/fonts/Oswald-VariableFont_wght.woff") format("woff");
   }
 
 
